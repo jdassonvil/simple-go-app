@@ -9,3 +9,6 @@ services:
     build: .
     ports:
       - 8000:8000
+    environment:
+      REDIS_ADDRESS: redis
+      REDIS_PORT: 6379
