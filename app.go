@@ -23,7 +23,7 @@ func main() {
 }
 
 func helloWorldHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello, World !")
+	fmt.Fprintf(w, "Hello, World v2 !")
 }
 
 func generateToken(username string) string {
