@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  redis:
+    image: redis
+    container_name: redis
+
+  app:
+    build: .
+    ports:
+      - 8000:8000

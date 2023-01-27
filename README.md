@@ -1,0 +1,1 @@
+A simple go app that connects to redis.
