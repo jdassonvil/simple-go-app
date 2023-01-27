@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  redis:
+    image: redis
+    container_name: redis
+
+  app:
+    image: jdassonvil/token-server:latest
+    ports:
+      - 80:8000
+    environment:
+      REDIS_ADDRESS: redis
+      REDIS_PORT: 6379
